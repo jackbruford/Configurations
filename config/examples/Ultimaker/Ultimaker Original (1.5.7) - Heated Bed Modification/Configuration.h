@@ -1171,7 +1171,8 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {78.7402,78.7402,200.0*8/3,760*1.1}//883.84346 }  // default { 78.7402, 78.7402, 533.3333, 876.6687 } // the values used are from somewhere and the values after default are commented out in the original file
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.3800, 78.7900, 533.3333, 883.84346*2 } // these values are copied from orginal config file, the z axis is multiplied by 2 as the silent steppers are 16steps instead of 8 as per the guide
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.3800/2, 78.7900/2, 533.3333/2, 883.84346*2 } // these values are copied from orginal config file, the z axis is multiplied by 2 as the silent steppers are 16steps instead of 8 as per the guide
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {78.7402/2, 78.7402/2, 533.3333, 883.84346 } // these values are copied from orginal config file, the z axis is multiplied by 2 as the silent steppers are 16steps instead of 8 as per the guide
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
  * Override with M203
